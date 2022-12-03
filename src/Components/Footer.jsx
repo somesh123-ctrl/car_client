@@ -7,7 +7,7 @@ const Footer = () => {
         <h3>Somesh Automobiles</h3>
       </div>
       <div className="Footer__licensing">
-        <h4>©2021 | All Rights Reseverd</h4>
+        <h4>©2022 | All Rights Reseverd</h4>
       </div>
     </div>
   );
