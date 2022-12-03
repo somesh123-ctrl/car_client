@@ -13,7 +13,7 @@ const { default: Axios } = require("axios");
 
 
 const houseRentAction = () => async (dispatch) => {
-  const dev_url = "http://localhost:5000/api/house-rent";
+  const dev_url = "https://car-server.onrender.com/api/house-rent";
   const production_url = "/api/house-rent";
   try {
     dispatch({ type: FETCH_HOUSE_REQUEST });

@@ -21,7 +21,7 @@ const ContactForm = () => {
     data.append("subject", subject);
     data.append("message", message);
 
-    const dev_url = "http://localhost:5000/api/contact";
+    const dev_url = "https://car-server.onrender.com/api/contact";
     const production_url = "/api/contact";
     axios
       .post(production_url, data)

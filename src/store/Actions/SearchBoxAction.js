@@ -2,7 +2,7 @@ import { FETCH_HOUSE_FAIL, FETCH_HOUSE_REQUEST, FETCH_HOUSE_SUCCESS } from "./Ac
 
   import axios from "axios";
   const SearchBoxAction = (search) => async (dispatch) => {
-    const dev_url = `http://localhost:5000/api/house-search/${search}`;
+    const dev_url = `https://car-server.onrender.com/api/house-search/${search}`;
     const production_url = `/api/house-search/${search}`;
     try {
       dispatch({ type: FETCH_HOUSE_REQUEST });

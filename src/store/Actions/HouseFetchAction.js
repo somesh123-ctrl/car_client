@@ -2,7 +2,7 @@ import { FETCH_HOUSE_REQUEST, FETCH_HOUSE_SUCCESS ,FETCH_HOUSE_FAIL } from "./Ac
 import axios from "axios";
 
 export const houseForSaleAction =() => async (dispatch) => {
-    const url = "http://localhost:5000/api/house-sale";
+    const url = "https://car-server.onrender.com/api/house-sale";
     const production_url = "/house/sale";
 
     try{
@@ -22,7 +22,7 @@ dispatch({type: FETCH_HOUSE_FAIL , payload: error}) ;
 
 
 export const houseForRentAction =() => async (dispatch) => {
-    const url = "http://localhost:5000/api/house-rent";
+    const url = "https://car-server.onrender.com/api/house-rent";
     const production_url = "/house/rent";
 
     try{

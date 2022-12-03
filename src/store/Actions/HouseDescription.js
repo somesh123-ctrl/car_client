@@ -3,7 +3,7 @@ import { FETCH_HOUSE_REQUEST, FETCH_HOUSE_SUCCESS ,FETCH_HOUSE_FAIL } from "./Ac
 
 
 const houseDescriptionAction = (houseID) => async (dispatch) => {
-  const dev_url = `http://localhost:5000/house/description/${houseID}`;
+  const dev_url = `https://car-server.onrender.com/house/description/${houseID}`;
   const production_url = `/house/description/${houseID}`;
   try {
     dispatch({ type: FETCH_HOUSE_REQUEST });
